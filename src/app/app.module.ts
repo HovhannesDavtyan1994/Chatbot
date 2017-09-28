@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MyNewComponentComponent } from './my-new-component/my-new-component.component';
-import { Infographic1 } from './Infographics/infographic1/infographic1.component';
+import { Infographic1Component } from './Infographics/infographic1/infographic1.component';
 import { Infographic2Component } from './Infographics/infographic2/infographic2.component';
 import { Infographic3Component } from './Infographics/infographic3/infographic3.component';
 import { Infographic4Component } from './Infographics/infographic4/infographic4.component';
@@ -14,7 +14,7 @@ import { Infographic6Component } from './Infographics/infographic6/infographic6.
   declarations: [
     AppComponent,
     MyNewComponentComponent,
-    Infographic1,
+    Infographic1Component,
     Infographic2Component,
     Infographic3Component,
     Infographic4Component,
