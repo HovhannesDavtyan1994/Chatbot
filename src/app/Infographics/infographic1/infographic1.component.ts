@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-infographic',
-  templateUrl: './infographic.component.html',
-  styleUrls: ['./infographic.component.css']
+  selector: 'app-infographic1',
+  templateUrl: './infographic1.component.html',
+  styleUrls: ['./infographic1.component.css']
 })
-export class Infographic implements OnInit {
+export class Infographic1 implements OnInit {
   public movingCity = {
     name : "London",
     cityIconUrl:"/assets/images/New infographics-37.png", 

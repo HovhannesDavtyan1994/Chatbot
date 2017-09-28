@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Infographic } from './infographic.component';
+import { Infographic1 } from './infographic1.component';
 
-describe('infographic', () => {
-  let component: Infographic;
-  let fixture: ComponentFixture<Infographic>; 
+describe('infographic1', () => {
+  let component: Infographic1;
+  let fixture: ComponentFixture<Infographic1>; 
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Infographic ]
+      declarations: [ Infographic1 ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Infographic);
+    fixture = TestBed.createComponent(Infographic1);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
