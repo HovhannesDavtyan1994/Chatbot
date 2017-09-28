@@ -4,7 +4,8 @@
 		</div>
 	</header>
 	<div class="chatFullCont">
- <div class="chatBox">
+  <div class="row">
+    <div class="chatBox col-md-6">
       <div id="chatHeight" class="chatHeight scrollbarStyle">
         <div *ngFor="let message of messages"> 
           <div class="sender" *ngIf="message.type=='agent'">
@@ -26,14 +27,16 @@
               </div>
             </div>
           </div>
-		  </div>
+        </div>
       </div>
       <div class="sendMsg">
         <input type="text"  placeholder="Type a message" #box value="I am from Berlin" (keyup.enter)="box.value=SubmitRequest(box.value);"/>
         <input type="submit" value="SEND" />
       </div>
     </div>
-    		<div class="articleBox" >
-          <img src="{{readings_data}}" style="width:50%"/>
-		</div>
+    <div class="infographicContainer pull-right col-md-6">
+      <app-infographic>       
+      </app-infographic>
+    </div>
+  </div>
 	</div>

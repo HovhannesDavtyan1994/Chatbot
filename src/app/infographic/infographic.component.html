@@ -1,0 +1,76 @@
+
+<div class="infographic row">
+    <div class="header-text col-md-12 text-center">
+        <p>Basic expenses comparison</p>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="country-container separator col-md-6">
+                <div class="pull-right col-md-10">
+                    <div class="city-icon-container col-md-3">
+                        <img width="100px" height="100px" src="{{originCity.cityIconUrl}}" alt="{{movingCity.name}}">
+                    </div>
+                    <div class="col-md-9">
+                        <p class="city-name col-md-12">{{originCity.name}}</p>
+                        <p class="overall-costs col-md-12">{{originCity.currency + originCity.price}} <span> (€{{originCity.priceInEur}}) {{originCity.period}}</span></p>
+                    </div>                  
+                </div>
+            </div>
+            <div class="country-container col-md-6">
+                <div class="pull-left col-md-10">
+                    <div class="city-icon-container col-md-3">
+                        <img width="100px" height="100px" src="{{movingCity.cityIconUrl}}" alt="{{movingCity.name}}">
+                    </div>
+                    <div class="col-md-9">
+                        <p class="city-name col-md-12">{{movingCity.name}}</p>
+                        <p class="overall-costs col-md-12">{{movingCity.currency + movingCity.price}} <span> (€{{movingCity.priceInEur}}) {{movingCity.period}}</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 text-center text-container">
+            <p>Overall expenses based on rent, groceries, and commuting prices</p>
+            
+        </div>
+    </div>
+    <div class="comparison-container col-md-12">
+        <ul class="container">
+            <li class="data-comparison row">
+                <div class="data-comparison-text col-md-9">                    
+                    Accommodation prices in {{originCity.name}}<br/>are <span>{{priceDifference.accommodation.asText}}</span> than in {{movingCity.name}}
+                </div>
+                <div class="data-comparison-percentage col-md-3 pull-right">
+                        <span>{{priceDifference.accommodation.percentage}}%</span>
+                    <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                </div>
+            </li>
+            <li class="data-comparison row">
+                <div class="data-comparison-text col-md-9">                    
+                    Transport prices in {{originCity.name}}<br/>are <span>{{priceDifference.transport.asText}}</span> than in {{movingCity.name}}
+                </div>
+                <div class="data-comparison-percentage col-md-3 pull-right">
+                    <span>{{priceDifference.transport.percentage}}%</span>
+                    <span>  <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                </div>
+            </li>
+            <li class="data-comparison row">
+                <div class="data-comparison-text col-md-9">                    
+                    Food prices in {{originCity.name}}<br/>are <span>{{priceDifference.food.asText}}</span> than in {{movingCity.name}}
+                </div>
+                <div class="data-comparison-percentage col-md-3 pull-right">
+                    <span>{{priceDifference.food.percentage}}%</span>
+                    <span>  <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                </div>
+            </li>
+            <li class="data-comparison last-data-comparison row">
+                <div class="data-comparison-text col-md-9">                    
+                    Entertainment prices in {{originCity.name}}<br/>are <span>{{priceDifference.entertainment.asText}}</span> than in {{movingCity.name}}
+                </div>
+                <div class="data-comparison-percentage col-md-3 pull-right">
+                    <span>{{priceDifference.entertainment.percentage}}%</span>
+                    <span>  <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
