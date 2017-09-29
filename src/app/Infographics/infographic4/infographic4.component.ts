@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./infographic4.component.css']
 })
 export class Infographic4Component implements OnInit {
-
+  public Employee = {
+    Name : "Emma",
+    MovingCity : "London"
+  }
   constructor() { }
 
   ngOnInit() {
