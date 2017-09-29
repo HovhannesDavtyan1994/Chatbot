@@ -106,3 +106,12 @@ p{
     left: 50px;
     top: 50px;
 }
+
+.cost{
+    color: rgba(247, 170, 25, 1);
+}
+
+.description{
+    font-size: 14px!important;
+    width: 100%
+}
