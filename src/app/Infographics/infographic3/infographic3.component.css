@@ -1,0 +1,132 @@
+.infographic{
+    font-family: proxima-nova;
+    color:rgba(79, 90, 101, 1);
+    padding: 0;
+}
+
+.infographic, .header-text, ul{
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+p{
+    margin: 0;
+}
+.header-text{
+    background-color:  rgba(22, 134, 255, 1);
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.testimonial-container img{
+    margin: auto;
+    display: block;
+}
+.testimonial-text{
+    font-size: 15px;
+    padding: 10px;
+    
+}
+
+.header-text p{
+    line-height: 60px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.desc-small-text{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+.line-height{
+    line-height: 70px;
+}
+
+.desc-big-text{ 
+    color: rgba(22, 134, 255, 1);
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 71px;
+    padding: 15px 0;
+
+}
+
+.desc-medium-text{
+    color: rgba(22, 134, 255, 1);
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.pt10{
+    padding-top: 10px;
+}
+
+.ml15{
+    margin-left: 15px;
+}
+.commute{
+    height: 100%;
+    margin: 0;
+}
+.commute li {
+    margin:20px 0;
+    height: 24px;
+}
+
+
+.commute li p{
+    line-height: 23px;
+    padding-left: 10px;
+    display: inline-block
+}
+
+
+.separator{
+    height: 100%;
+    position: relative
+}
+
+.separator{
+    border-right: 1px solid rgba(142,142, 141, 1);
+}
+
+.employee-percentage{
+    border: 1px solid rgba(22, 134, 255, 1);
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.employee-percentage-value{
+    font-size: 32px;
+    color: rgba(22, 134, 255, 1);
+}
+
+.employee-percentage-text{
+    font-size: 13px;
+    padding: 5px;
+}
+.chart-container{
+    height: 235px;
+    margin-bottom: 10px;
+}
+
+.chart-info{
+    padding: 0;
+    display: inline-block;
+}
+.gray-coloring{
+    background-color: rgba(242, 242, 242, 1);
+    display: inline-block;
+    padding: 10px;
+    height: 100%;
+
+}
+
+.testimonial-container, .chart-info, .average-container{
+    width: 99%;
+    margin-bottom: 10px;
+}
