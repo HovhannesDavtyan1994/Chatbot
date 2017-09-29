@@ -25,7 +25,7 @@ export class MyNewComponentComponent implements OnInit {
     this.client = new ApiAiClient({accessToken: '7038fb95c5384508a0886caf841ef9b8'})
     this.client.eventRequest("WELCOME")
     .then((response) => {
-      this.handleAPIAIresponse(response);
+        this.handleAPIAIresponse(response);
     })
     .catch((error) => {
       console.log(error);
