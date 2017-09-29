@@ -8,6 +8,22 @@ import Chart from 'chart.js';
 })
 export class Infographic3Component implements OnInit {
 
+public Area = {
+    name : "Mile End",
+    whyItIsCool : "cheap rents, colourful lifestyle and great services.",
+    stayedEmployeesCount : "45%",
+    TimeFor:{
+        bike : "15",
+        tube : "20",
+        walk : "25",
+    },
+    whatColleguesSay : {
+        Text:"Mlle End id great if you enjoy cafe culture like me and has some really great bars. There's a few really nice residential areas which are quite, but because of the students it can sometimes get noisy. That's the only thing i don't like, though.",
+        Author : "Peter",
+        RelocatedTime : "relocated to Stark London in Feb 2017"
+    }
+}
+
   constructor() { }
 
   ngOnInit() {

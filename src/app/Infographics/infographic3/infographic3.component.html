@@ -1,16 +1,16 @@
 <div class="infographic">
   <div class="row">
     <div class="header-text col-md-12 text-center">
-        <p>Stark employees' living in Mile End</p>
+        <p>Stark employees' living in {{Area.name}}</p>
     </div>
   </div>
   <div class="row">
     <div class="col-md-12">
         <div class="col-md-4">
-            <p class="desc-big-text text-right">Mile End</p>
+            <p class="desc-big-text text-right">{{Area.name}}</p>
         </div>
         <div class="col-md-8">
-            <p class="desc-small-text text-left line-height">cheap rents, colourful lifestyle and great services.</p>
+            <p class="desc-small-text text-left line-height">{{Area.whyItIsCool}}</p>
         </div>
     </div>
   </div>
@@ -56,16 +56,16 @@
           <div class="gray-coloring">
             <div class="employee-percentage">
               <div class="employee-percentage-value col-md-5">
-                45%
+                {{Area.stayedEmployeesCount}}
               </div>
               <div class="employee-percentage-text col-md-7">
                 Of employees stayed here
               </div>
             </div>
             <ul class="commute text-center col-md-12">
-                <li><img height="24px" src="/assets/images/New infographics-17(grey).png" alt=""> <p>15 mins by bike</p></li>
-                <li><img height="24px" src="/assets/images/New infographics-16(grey).png" alt=""> <p>20 mins by bike</p></li>
-                <li><img height="24px" src="/assets/images/New infographics-20(grey).png" alt=""> <p>25 mins by bike</p></li>
+                <li><img height="24px" src="/assets/images/New infographics-17(grey).png" alt=""> <p>{{Area.TimeFor.bike}} mins by bike</p></li>
+                <li><img height="24px" src="/assets/images/New infographics-16(grey).png" alt=""> <p>{{Area.TimeFor.tube}} mins by tube</p></li>
+                <li><img height="24px" src="/assets/images/New infographics-20(grey).png" alt=""> <p>{{Area.TimeFor.walk}} mins by walk</p></li>
             </ul>
           </div>
       </div>
@@ -75,8 +75,8 @@
     <div class="testimonial-container col-md-12">
         <div class="gray-coloring">
           <img width="80px" height="80px" src="/assets/images/New infographics-30(grey).png" alt="Testimonial">
-          <p class="text-left testimonial-text">Mlle End id great if you enjoy cafe culture like me and has some really great bars. There's a few really nice residential areas which are quite, but because of the students it can sometimes get noisy. That's the only thing i don't like, though.</p>
-          <div class="pt10 col-md-12 text-center"><i><b>Peter,</b> relocated to Stark London in Feb 2017</i></div>
+          <p class="text-left testimonial-text">{{Area.whatColleguesSay.Text}}</p>
+          <div class="pt10 col-md-12 text-center"><i><b>{{Area.whatColleguesSay.Author}},</b>{{Area.whatColleguesSay.RelocatedTime}} </i></div>
         </div>        
     </div>
   </div>
