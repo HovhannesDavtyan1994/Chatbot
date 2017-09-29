@@ -1,20 +1,20 @@
 <div class="infographic">
     <div class="row">
       <div class="header-text col-md-12 text-center">
-          <p>Stark employees' living in Mile End</p>
+          <p>Stark employees' living in {{Employee.AreaName}}</p>
       </div>
     </div>
     <div class="row">
       <ul class="col-md-12 list">
         <li class="col-md-4 text-center">
             <img src="/assets/images/New infographics-16.png" alt="">
-            <p class="percentage">72%</p>
+            <p class="percentage">{{Employee.TransportToOffice.Bike.ColleaguesPercent}}%</p>
             <p class="text-small">of Stark employees</p>
             <p class="text-big">take the tube to Stark</p>
             <div class="tube-info">
-              <p class="cost">£135</p>
+              <p class="cost">£{{Employee.TransportToOffice.Bike.Price}}</p>
               <p class="period">per/month</p>
-              <p class="commute-time">20 mins</p>
+              <p class="commute-time">{{Employee.TransportToOffice.Bike.Time}} mins</p>
               <p class="commute-text">commute time</p>
             </div>
             <span class="cons">
@@ -28,42 +28,42 @@
         </li>
         <li class="col-md-4 text-center">
             <img src="/assets/images/New infographics-17.png" alt="">
-            <p class="percentage">72%</p>
+            <p class="percentage">{{Employee.TransportToOffice.Cycle.ColleaguesPercent}}%</p>
             <p class="text-small">of Stark employees</p>
-            <p class="text-big">take the tube to Stark</p>
+            <p class="text-big">cycle to Stark</p>
             <div class="tube-info">
-              <p class="cost">£135</p>
+              <p class="cost">£{{Employee.TransportToOffice.Cycle.Price}}</p>
               <p class="period">per/month</p>
-              <p class="commute-time">20 mins</p>
+              <p class="commute-time">{{Employee.TransportToOffice.Cycle.Time}} mins</p>
               <p class="commute-text">commute time</p>
             </div>
             <span class="cons">
               <i class="fa fa-check-circle" aria-hidden="true"></i>
-              <p>Not weather dependent</p>
+              <p>Cost effective with Santander bikes</p>
             </span>
             <span class="pros">
               <i class="fa fa-times-circle" aria-hidden="true"></i>
-              <p>Tube on peak hour is VERY busy</p>
+              <p>Can be dangerous if not used to cycling</p>
             </span>
         </li>
         <li class="col-md-4 text-center">
             <img src="/assets/images/New infographics-20.png" alt="">
-            <p class="percentage">72%</p>
+            <p class="percentage">{{Employee.TransportToOffice.Walk.ColleaguesPercent}}%</p>
             <p class="text-small">of Stark employees</p>
-            <p class="text-big">take the tube to Stark</p>
+            <p class="text-big">walk to Stark</p>
             <div class="tube-info">
-              <p class="cost">£135</p>
+              <p class="cost">£{{Employee.TransportToOffice.Walk.Price}}</p>
               <p class="period">per/month</p>
-              <p class="commute-time">20 mins</p>
+              <p class="commute-time">{{Employee.TransportToOffice.Walk.Time}} mins</p>
               <p class="commute-text">commute time</p>
             </div>
             <span class="cons">
               <i class="fa fa-check-circle" aria-hidden="true"></i>
-              <p>Not weather dependent</p>
+              <p>Cheap,safe,eco-friendly</p>
             </span>
             <span class="pros">
               <i class="fa fa-times-circle" aria-hidden="true"></i>
-              <p>Tube on peak hour is VERY busy</p>
+              <p>A long walk,itrains often</p>
             </span>
         </li>        
       </ul>
