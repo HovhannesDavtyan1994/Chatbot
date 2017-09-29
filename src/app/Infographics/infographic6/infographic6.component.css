@@ -1,0 +1,94 @@
+.infographic{
+    font-family: proxima-nova;
+    color:rgba(79, 90, 101, 1);
+    padding: 0;
+}
+
+.infographic, .header-text, ul{
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+p{
+    margin: 0;
+}
+.header-text{
+    background-color:  rgba(22, 134, 255, 1);
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+
+.header-text p{
+    line-height: 60px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.grey-coloring{
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.wrapper{
+    font-size: 32px;
+    display: inline-block;
+    width: 97%;
+    margin: 10px;
+
+}
+
+.wrapper > div{
+    padding: 0;
+}
+.names1, .names2, .names3 {
+    margin: 0;
+}
+.names1 li, .names2 li, .names3 li {
+    height: 120px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.table-header{
+    background-color:  rgba(22, 134, 255, 1);
+    color:white;
+    line-height: 32px;
+}
+
+
+.table-header img{
+    width: 80px;
+    margin-top: -50px; 
+}
+
+
+.list-item{
+    line-height: 120px;
+}
+
+.number{
+    font-size: 54px;
+}
+
+.list-item-total{
+    background-color:rgba(192, 225, 249, 1);
+    font-weight: bold;
+}
+
+.table-header p{
+    width: 155px;
+    display: inline-block;
+    padding-top: 28px;
+    line-height: 30px;
+}
+
+.head-img-container{
+    display: inline-block;
+}
+.clearifications{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
