@@ -95,10 +95,7 @@ export class MyNewComponentComponent implements OnInit {
       console.log("infographic.number",infographic.number);
       this.InfographicNumber = infographic.number;
       }
-    else{
-      this.InfographicNumber = 0;
-    }
-    this.response=response.result.fulfillment.speech;
+      this.response=response.result.fulfillment.speech;
     let responsemessage=this.response.split("$$$");
     responsemessage.forEach(element => {
       if(element!=""){
