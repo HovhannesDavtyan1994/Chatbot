@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ApiAiClient} from "api-ai-javascript";
 
+
 @Component({
   selector: 'app-my-new-component',
   templateUrl: './my-new-component.component.html',
@@ -13,6 +14,7 @@ export class MyNewComponentComponent implements OnInit {
   public client:ApiAiClient;
   public readings_data:string="I know that you just landed on this screen and didn't spoke to agent yet";
   public messages=[];
+  public InfographicNumber;
   /*
     {message:"Hi Jenny! I'm Ben, your rental budget specialist. I was designed to help you to build your monthly budget for your move to London.",type:"agent"},
     {message:"Would you like to know how much money you will need to live in London?",type:"agent"}
@@ -87,7 +89,15 @@ export class MyNewComponentComponent implements OnInit {
   }
  
   handleAPIAIresponse(response){
-    console.log(response);
+    console.log("handle",response);
+    let infographic = response.result.fulfillment.data.Infographics;
+    if(infographic.hasOwnProperty("number")){
+      console.log("infographic.number",infographic.number);
+      this.InfographicNumber = infographic.number;
+      }
+    else{
+      this.InfographicNumber = 0;
+    }
     this.response=response.result.fulfillment.speech;
     let responsemessage=this.response.split("$$$");
     responsemessage.forEach(element => {

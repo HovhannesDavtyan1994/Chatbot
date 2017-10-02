@@ -11,7 +11,7 @@
             <th class="grey-coloring"></th>
             <th>
               <span><img src="/assets/images/New infographics-26.png" alt=""></span>
-              <p>Jenny's <br/> budget</p></th>
+              <p>{{Comparision.EmployeeName}}'s <br/> budget</p></th>
             <th>
               <span><img src="/assets/images/New infographics-26.png" alt=""></span>
               <p>Average <br/> stark employee</p>
@@ -21,8 +21,8 @@
         <tbody>
           <tr class="dark-grey-coloring">
             <td class="blue-coloring"><p class="left-text">Total</p></td>
-            <td class=""><p class="big-text">£980</p> <p class="small-text text-left">(€1,115)</p></td>
-            <td class=""><p class="big-text">£1,785</p> <p class="small-text text-left">(€1,965)</p></td>
+            <td class=""><p class="big-text">{{Comparision.Total.ForEmployee.GBP}}</p> <p class="small-text text-left">(€{{Comparision.Total.ForEmployee.EUR}})</p></td>
+            <td class=""><p class="big-text">£{{Comparision.Total.Average.GBP}}</p> <p class="small-text text-left">(€{{Comparision.Total.Average.GBP}})</p></td>
           </tr>
           <tr>
             <td class="grey-coloring"><p class="left-text">Rent</p></td>
@@ -31,8 +31,8 @@
                 <img src="/assets/images/New infographics-27.png" alt=""></span>
               <span class="tbody-text-container">
                 <span class="cost">
-                    <p class="big-text">£1,785</p>
-                    <p class="small-text text-left">(€1,965)</p>
+                    <p class="big-text">£{{Comparision.Rent.ForEmployee.GBP}}</p>
+                    <p class="small-text text-left">(€{{Comparision.Rent.ForEmployee.GBP}})</p>
                     <p class="description"><br/>Room in Mile End</p>
                 </span>
               </span>
@@ -43,8 +43,8 @@
                 </span>
                 <span class="tbody-text-container">
                   <span class="cost">
-                      <p class="big-text">£1,785</p>
-                      <p class="small-text text-left">(€1,965)</p>
+                      <p class="big-text">£{{Comparision.Total.Average.GBP}}</p>
+                      <p class="small-text text-left">(€{{Comparision.Total.Average.GBP}})</p>
                       <p class="description"><br/>Room in Mile End</p>
                   </span>
                 </span>
