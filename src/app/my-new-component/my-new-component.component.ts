@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ApiAiClient} from "api-ai-javascript";
 
-
 @Component({
   selector: 'app-my-new-component',
   templateUrl: './my-new-component.component.html',
@@ -94,9 +93,7 @@ export class MyNewComponentComponent implements OnInit {
     if(infographic.hasOwnProperty("number")){
       console.log("infographic.number",infographic.number);
       this.InfographicNumber = infographic.number;
-      }
-    else{
-      this.InfographicNumber = 0;
+      
     }
     this.response=response.result.fulfillment.speech;
     let responsemessage=this.response.split("$$$");
