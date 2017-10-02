@@ -10,6 +10,7 @@ import { Infographic4Component } from './Infographics/infographic4/infographic4.
 import { Infographic5Component } from './Infographics/infographic5/infographic5.component';
 import { Infographic6Component } from './Infographics/infographic6/infographic6.component';
 import { Infographic7Component } from './Infographics/infographic7/infographic7.component';
+import { Infographic8Component } from './Infographics/infographic8/infographic8.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { Infographic7Component } from './Infographics/infographic7/infographic7.
     Infographic4Component,
     Infographic5Component,
     Infographic6Component,
-    Infographic7Component
+    Infographic7Component,
+    Infographic8Component
   ],
   imports: [
     BrowserModule

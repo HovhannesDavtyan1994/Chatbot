@@ -1,0 +1,171 @@
+.infographic{
+    font-family: proxima-nova;
+    color:rgba(79, 90, 101, 1);
+    padding: 0;
+}
+
+.infographic, .header-text, ul{
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+p{
+    margin: 0;
+}
+.header-text{
+    background-color:  rgba(22, 134, 255, 1);
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+
+.header-text p{
+    line-height: 60px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.grey-coloring{
+    background-color: rgba(242, 242, 242, 1);
+    border: none;
+    border-bottom: 1px solid rgba(127, 127, 127, 1);
+}
+.blue-coloring{
+    background-color:  rgba(22, 134, 255, 1);
+    color: white;
+}
+
+.data-table{
+}
+
+td {
+    border-right: 1px solid rgba(127, 127, 127, 1);
+    border-bottom: 1px solid rgba(127, 127, 127, 1);
+}
+
+th{
+    border-bottom: 1px solid rgba(127, 127, 127, 1);
+}
+
+.data-table thead th{
+    height: 150px;
+    width: 320px;
+    border-right: 1px solid rgba(127, 127, 127, 1);
+}
+
+.data-table thead td p{    
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    width: 170px;
+    padding: 30px;
+} 
+
+.left-text{    
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    width: 170px;
+    padding: 30px;
+}
+
+.data-table thead p{
+    font-size: 24px;
+    font-weight: 600;
+    width: 215px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.data-table thead th span{    
+    float: left;
+    padding-right: 10px;
+    padding-left: 14px;
+}
+.data-table thead th span img{
+    width:  80px;
+}
+
+
+.data-table tbody tr{
+    height: 160px;
+}
+
+.dark-grey-coloring{
+    background-color: rgba(79, 90, 101, 1);
+    color: white;
+}
+
+.dark-grey-coloring td{
+    border-color: rgba(39, 45, 50, 1)
+}
+
+p.small-text, p.big-text{
+    width: 120px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: none;
+    font-weight: 500;
+    width: inherit;
+    padding: 0;
+}
+
+
+p.small-text{
+    font-size: 24px;
+    display: inline-block;
+    text-align: left;
+    width: 85px;
+}
+
+
+p.big-text{
+    font-size:40px;
+    padding: 0;
+    width:110px;
+    text-align:right;
+    display: inline-block;
+}
+
+.tbody-img-container{
+    height: 80px;
+}
+
+.tbody-text-container span.cost{
+    display: inline-block;
+    width:  200px;
+    color: rgba(22, 134, 255, 1);
+    font-weight: bold;
+}
+
+.tbody-text-container{
+    display: block;
+    float:right;
+    margin-right: 20px;
+}
+
+.tbody-img-container{
+    display: block;
+    float:left;
+    margin-left: 20px;
+    height: 80px;
+}
+
+.tbody-img-container img{
+    max-width: 80px;
+    height: inherit
+}
+
+p.description{
+    color: rgba(79, 90, 101, 1);
+    display: inline;
+    font-weight: normal;
+}
+
+.Rent span img{
+    height:55px;
+    margin-top:10px;
+}
+
