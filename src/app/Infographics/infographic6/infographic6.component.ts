@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input} from '@angular/core';
 
 @Component({
   selector: 'app-infographic6',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./infographic6.component.css']
 })
 export class Infographic6Component implements OnInit {
-
+  @Input() model: any
+  public data = this.model;
   public GroceryCosts = {
     EveryDay:{
       Percent : 55,

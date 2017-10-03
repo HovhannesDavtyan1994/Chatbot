@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-infographic5',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./infographic5.component.css']
 })
 export class Infographic5Component implements OnInit {
-
+  @Input() model: any
+  public data = this.model;
   public Employee = {
     AreaName : "Mile End",
     TransportToOffice : {

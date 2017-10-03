@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import Chart from 'chart.js';
 
 @Component({
@@ -7,7 +7,8 @@ import Chart from 'chart.js';
   styleUrls: ['./infographic3.component.css']
 })
 export class Infographic3Component implements OnInit {
-
+    @Input() model: any
+    public data = this.model;
 public Area = {
     name : "Mile End",
     whyItIsCool : "cheap rents, colourful lifestyle and great services.",
