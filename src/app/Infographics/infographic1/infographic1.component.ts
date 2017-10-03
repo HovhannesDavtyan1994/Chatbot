@@ -7,11 +7,12 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class Infographic1Component implements OnInit {
   @Input() model: any
+  Math: any
   public data = this.model;
 
   constructor() {
-    
-   }
+    this.Math = Math;  
+  }
 
   ngOnInit() {
    

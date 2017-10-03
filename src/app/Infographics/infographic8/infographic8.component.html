@@ -21,8 +21,10 @@
         <tbody>
           <tr class="dark-grey-coloring">
             <td class="blue-coloring"><p class="left-text">Total</p></td>
-            <td class=""><p class="big-text">{{Comparision.Total.ForEmployee.GBP}}</p> <p class="small-text text-left">(€{{Comparision.Total.ForEmployee.EUR}})</p></td>
-            <td class=""><p class="big-text">£{{Comparision.Total.Average.GBP}}</p> <p class="small-text text-left">(€{{Comparision.Total.Average.GBP}})</p></td>
+            <td class=""><p class="big-text">£{{this.Math.round(this.model.user_cost.rent_cost + this.model.user_cost.transportation_cost + this.model.user_cost.groceries_cost)}}</p> 
+              <p class="small-text text-left">(€{{this.Math.round((this.model.user_cost.rent_cost + this.model.user_cost.transportation_cost + this.model.user_cost.groceries_cost)*1.13)}})</p></td>
+            <td class=""><p class="big-text">£{{this.Math.round(this.model.others_cost.rent_cost + this.model.others_cost.transportation_cost + this.model.others_cost.groceries_cost)}}</p> 
+              <p class="small-text text-left">(€{{this.Math.round((this.model.others_cost.rent_cost + this.model.others_cost.transportation_cost + this.model.others_cost.groceries_cost) * 1.13)}})</p></td>
           </tr>
           <tr>
             <td class="grey-coloring"><p class="left-text">Rent</p></td>
@@ -32,7 +34,7 @@
               <span class="tbody-text-container">
                 <span class="cost">
                     <p class="big-text">£{{this.model.user_cost.rent_cost}}</p>
-                    <p class="small-text text-left">(€{{this.model.user_cost.rent-cost}})</p>
+                    <p class="small-text text-left">(€{{this.Math.round(this.model.user_cost.rent_cost * 1.13)}})</p>
                     <p class="description"><br/>Room in {{this.model.area_to_stay}}</p>
                 </span>
               </span>
@@ -44,7 +46,7 @@
                 <span class="tbody-text-container">
                   <span class="cost">
                       <p class="big-text">£{{this.model.others_cost.rent_cost}}</p>
-                      <p class="small-text text-left">(€{{this.model.others_cost.rent-cost}})</p>
+                      <p class="small-text text-left">(€{{this.Math.round(this.model.others_cost.rent_cost * 1.13)}})</p>
                       <p class="description"><br/>Room in {{this.model.area_to_stay}}</p>
                   </span>
                 </span>
@@ -59,7 +61,7 @@
                 <span class="tbody-text-container">
                   <span class="cost">
                       <p class="big-text">£{{this.model.user_cost.transportation_cost}}</p>
-                      <p class="small-text text-left">(€{{this.model.user_cost.transportation_cost}})</p>
+                      <p class="small-text text-left">(€{{this.Math.round(this.model.user_cost.transportation_cost * 1.13)}})</p>
                       <p class="description"><br/>Tube</p>
                   </span>
                 </span>
@@ -69,7 +71,7 @@
                 <span class="tbody-text-container">
                   <span class="cost">
                       <p class="big-text">£{{this.model.others_cost.transportation_cost}}</p>
-                      <p class="small-text text-left">(€{{this.model.others_cost.transportation_cost}})</p>
+                      <p class="small-text text-left">(€{{this.Math.round(this.model.others_cost.transportation_cost * 1.13)}})</p>
                       <p class="description"><br/>Tube</p>
                   </span>
                 </span>
@@ -82,7 +84,7 @@
                 <span class="tbody-text-container">
                   <span class="cost">
                       <p class="big-text">£{{this.model.user_cost.groceries_cost}}</p>
-                      <p class="small-text text-left">(€{{this.model.user_cost.groceries_cost}})</p>
+                      <p class="small-text text-left">(€{{this.Math.round(this.model.user_cost.groceries_cost * 1.13)}})</p>
                       <p class="description"><br/>Groceries</p>
                   </span>
                 </span>
@@ -92,7 +94,7 @@
                 <span class="tbody-text-container">
                   <span class="cost">
                       <p class="big-text">£{{this.model.others_cost.groceries_cost}}</p>
-                      <p class="small-text text-left">(€{{this.model.others_cost.groceries_cost}})</p>
+                      <p class="small-text text-left">(€{{this.Math.round(this.model.others_cost.groceries_cost * 1.13)}})</p>
                       <p class="description"><br/>Groceries</p>
                   </span>
                 </span>
