@@ -7,30 +7,33 @@
     <div class="row grey-coloring">
       <div class="wrapper">
         <div class="container info">
-          <p class="list-header text-center">Emma`s monthly London Budget</p>
+          <p class="list-header text-center">John`s monthly London Budget</p>
           <ul class="monthly-budget">
               <li>
                 <span><img src="/assets/images/New infographics-19.png" alt=""></span>
                 <p>Rent</p>
-                <b class="pull-right cost">£{{this.model.rent_cost}}<span>(€{{this.model.rent_cost * 1.13}})</span></b>
+                <b class="pull-right cost">£{{this.model.rent_cost}}<span>(€{{ this.Math.round(this.model.rent_cost * 1.13) }})</span></b>
                 <p class="description">a room in flatshare</p>
               </li>
               <li>
                 <span><img src="/assets/images/New infographics-18.png" alt=""></span>
                 <p>Commute</p>
-                <b class="pull-right cost">£{{this.model.rent_cost}}<span>(€{{Math.round(this.model.rent_cost * 1.13)}})</span></b>
+                <b class="pull-right cost">£{{this.model.transportation_cost}}<span>(€{{this.Math.round(this.model.transportation_cost  * 1.13)}})</span></b>
                 <p class="description">taking the tube to Stark offices</p>
               </li>
               <li class="last-li">
                 <span><img src="/assets/images/New infographics-28.png" alt=""></span>
                 <p>Groceries</p>
-                <b class="pull-right cost">£{{this.model.transportation_cost}}<span>(€{{this.model.transportation_cost * 1.13}})</span></b>
-                <p class="description">based on Emma`s cooking everyday</p>
+                <b class="pull-right cost">£{{this.model.groceries_cost || 0}}<span>(€{{this.Math.round((this.model.groceries_cost || 0 ) * 1.13 )}})</span></b>
+                <p class="description">based on John`s cooking everyday</p>
               </li>
           </ul>
           <div class="total">
               <p class="total-text text-center">TOTAL</p>
-              <p class="currency-text">£{{this.model.rent_cost + this.model.transportation_cost}}({{(this.model.rent_cost + this.model.transportation_cost)* 1.13}}€)</p>
+              <p class="currency-text">£
+                {{  this.model.rent_cost + this.model.transportation_cost + (this.model.groceries_cost || 0)   }}
+                (  {{ this.Math.round(  (this.model.rent_cost + this.model.transportation_cost + (this.model.groceries_cost || 0 ) ) * 1.13) }} €)
+              </p>
           </div>
         </div>
       </div>
