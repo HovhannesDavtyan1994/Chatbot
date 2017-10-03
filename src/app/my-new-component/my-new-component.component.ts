@@ -15,6 +15,8 @@ export class MyNewComponentComponent implements OnInit {
   public readings_data:string="I know that you just landed on this screen and didn't spoke to agent yet";
   public messages=[];
   public InfographicNumber;
+  public bankName = "sssssssssss";
+  public parentModel=1;
   /*
     {message:"Hi Jenny! I'm Ben, your rental budget specialist. I was designed to help you to build your monthly budget for your move to London.",type:"agent"},
     {message:"Would you like to know how much money you will need to live in London?",type:"agent"}

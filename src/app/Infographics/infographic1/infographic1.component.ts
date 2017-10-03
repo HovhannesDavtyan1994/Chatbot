@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-infographic1',
@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./infographic1.component.css']
 })
 export class Infographic1Component implements OnInit {
-  
+  @Input() model: any
+
+  public bankName = this.model;
   public movingCity = {
     name : "London",
     cityIconUrl:"/assets/images/New infographics-37.png", 
@@ -50,6 +52,6 @@ export class Infographic1Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
+   
   }
 }
