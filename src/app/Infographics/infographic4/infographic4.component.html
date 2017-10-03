@@ -10,7 +10,7 @@
         <p class="list-header text-center">{{this.model.name}} monthly {{this.model.destination_city}} Budget</p>
         <ul class="monthly-budget">
             <li><span><img src="/assets/images/New infographics-19.png" alt=""></span> <p>Rent</p> 
-              <b class="pull-right cost">£{{this.model.rent}}</b>
+              <b class="pull-right cost">£{{this.model.rent}}<span>(€{{ this.Math.round(this.model.rent * 1.13) }})</span></b>
             </li>
             <li><span><img src="/assets/images/New infographics-18.png" alt=""></span> <p>Commute</p></li>
             <li class="last-li"><span><img src="/assets/images/New infographics-28.png" alt=""></span><p>Groceries</p></li>

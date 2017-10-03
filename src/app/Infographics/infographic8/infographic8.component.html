@@ -23,8 +23,10 @@
             <td class="blue-coloring"><p class="left-text">Total</p></td>
             <td class=""><p class="big-text">£{{this.Math.round(this.model.user_cost.rent_cost + this.model.user_cost.transportation_cost + this.model.user_cost.groceries_cost)}}</p> 
               <p class="small-text text-left">(€{{this.Math.round((this.model.user_cost.rent_cost + this.model.user_cost.transportation_cost + this.model.user_cost.groceries_cost)*1.13)}})</p></td>
-            <td class=""><p class="big-text">£{{this.Math.round(this.model.others_cost.rent_cost + this.model.others_cost.transportation_cost + this.model.others_cost.groceries_cost)}}</p> 
-              <p class="small-text text-left">(€{{this.Math.round((this.model.others_cost.rent_cost + this.model.others_cost.transportation_cost + this.model.others_cost.groceries_cost) * 1.13)}})</p></td>
+            <!-- <td class=""><p class="big-text">£{{this.Math.round(this.model.others_cost.rent_cost + this.model.others_cost.transportation_cost + this.model.others_cost.groceries_cost)}}</p> 
+              <p class="small-text text-left">(€{{this.Math.round((this.model.others_cost.rent_cost + this.model.others_cost.transportation_cost + this.model.others_cost.groceries_cost) * 1.13)}})</p></td> -->
+              <td class=""><p class="big-text">£{{1785}}</p> 
+                <p class="small-text text-left">(€{{1965}})</p></td>
           </tr>
           <tr>
             <td class="grey-coloring"><p class="left-text">Rent</p></td>
@@ -45,9 +47,9 @@
                 </span>
                 <span class="tbody-text-container">
                   <span class="cost">
-                      <p class="big-text">£{{this.model.others_cost.rent_cost}}</p>
-                      <p class="small-text text-left">(€{{this.Math.round(this.model.others_cost.rent_cost * 1.13)}})</p>
-                      <p class="description"><br/>Room in {{this.model.area_to_stay}}</p>
+                      <p class="big-text">£{{1450}}</p>
+                      <p class="small-text text-left">(€{{this.Math.round(1595)}})</p>
+                      <p class="description"><br/>Rent</p>
                   </span>
                 </span>
             </td>
@@ -70,9 +72,9 @@
                 <span class="tbody-img-container"><img src="/assets/images/New infographics-16.png" alt=""></span>
                 <span class="tbody-text-container">
                   <span class="cost">
-                      <p class="big-text">£{{this.model.others_cost.transportation_cost}}</p>
-                      <p class="small-text text-left">(€{{this.Math.round(this.model.others_cost.transportation_cost * 1.13)}})</p>
-                      <p class="description"><br/>Tube</p>
+                      <p class="big-text">£{{135}}</p>
+                      <p class="small-text text-left">(€{{150}})</p>
+                      <p class="description"><br/>Transportation</p>
                   </span>
                 </span>
             </td>
@@ -93,8 +95,8 @@
                 <span class="tbody-img-container"><img src="/assets/images/New infographics-28.png" alt=""></span>
                 <span class="tbody-text-container">
                   <span class="cost">
-                      <p class="big-text">£{{this.model.others_cost.groceries_cost}}</p>
-                      <p class="small-text text-left">(€{{this.Math.round(this.model.others_cost.groceries_cost * 1.13)}})</p>
+                      <p class="big-text">£{{200}}</p>
+                      <p class="small-text text-left">(€{{this.Math.round(220)}})</p>
                       <p class="description"><br/>Groceries</p>
                   </span>
                 </span>

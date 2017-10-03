@@ -24,15 +24,15 @@
               <li class="last-li">
                 <span><img src="/assets/images/New infographics-28.png" alt=""></span>
                 <p>Groceries</p>
-                <b class="pull-right cost">£{{this.model.groceries_cost || 0}}<span>(€{{this.Math.round((this.model.groceries_cost || 0 ) * 1.13 )}})</span></b>
+                <b class="pull-right cost" *ngIf="(!!this.model.groceries_cost )">£{{this.model.groceries_cost || 0}}<span>(€{{this.Math.round((this.model.groceries_cost || 0 ) * 1.13 )}})</span></b>
                 <p class="description">based on John`s cooking everyday</p>
               </li>
           </ul>
           <div class="total">
               <p class="total-text text-center">TOTAL</p>
-              <p class="currency-text">£
+              <p *ngIf="(!!this.model.groceries_cost && !!this.model.transportation_cost && !!this.model.rent_cost)" class="currency-text">£
                 {{  this.model.rent_cost + this.model.transportation_cost + (this.model.groceries_cost || 0)   }}
-                (  {{ this.Math.round(  (this.model.rent_cost + this.model.transportation_cost + (this.model.groceries_cost || 0 ) ) * 1.13) }} €)
+                ( € {{ this.Math.round(  (this.model.rent_cost + this.model.transportation_cost + (this.model.groceries_cost || 0 ) ) * 1.13) }} )
               </p>
           </div>
         </div>
