@@ -8,10 +8,6 @@ import { Component, OnInit ,Input} from '@angular/core';
 export class Infographic4Component implements OnInit {
   @Input() model: any
   public data = this.model;
-  public Employee = {
-    Name : "Emma",
-    MovingCity : "London"
-  }
   constructor() { }
 
   ngOnInit() {

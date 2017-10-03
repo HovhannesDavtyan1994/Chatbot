@@ -1,86 +1,86 @@
 <div class="infographic">
-  <div class="row">
-    <div class="header-text col-md-12 text-center">
-        <p>Stark employees' living in {{Area.name}}</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-        <div class="col-md-4">
-            <p class="desc-big-text text-right">{{Area.name}}</p>
-        </div>
-        <div class="col-md-8">
-            <p class="desc-small-text text-left line-height">{{Area.whyItIsCool}}</p>
-        </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="average-container col-md-12">
-        <div class="gray-coloring">
-          <div class="col-md-3">
-              <p class="desc-small-text text center ">Average of what you colleagues from stark pay</p>
-          </div>
-          <div class="col-md-9">
-              <div class="col-md-6 text-center">
-                  <p class="desc-medium-text">£590</p>
-                  <p class="desc-small-text text center">a room in flatshare</p>
-              </div>
-              <div class="col-md-6 text-center">
-                  <p class="desc-medium-text">£1,090</p>
-                  <p class="desc-small-text text-center">1 bedroom flat</p>
-              </div>  
-              <div class="pt10 col-md-12 text-center"><i>(prices above include bills)</i></div>
-          </div>
-        </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="chart-info col-md-12">
-      <div class="chart-container col-md-9">
-        <div class="gray-coloring col-md-12">
-          <div class="col-md-6 separator">
-            <div class="text-center">Types of accommodation</div>
-            <div class="chart">
-                <canvas height="150px" id="chart1"></canvas>
-            </div>
-          </div>
-          <div class="col-md-6">
-              <div class="text-center">Ways of commuting</div>
-              <div class="chart">
-                  <canvas height="150px"  id="chart2"></canvas>
-              </div>
-          </div>
-        </div>
+    <div class="row">
+      <div class="header-text col-md-12 text-center">
+          <p>Stark employees' living in {{this.model.Name_of_area}}</p>
       </div>
-      <div class="chart-container col-md-3">
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+          <div class="col-md-4">
+              <p class="desc-big-text text-right">{{this.model.Name_of_area}}</p>
+          </div>
+          <div class="col-md-8">
+              <p class="desc-small-text text-left">{{this.model.why_its_cool}}</p>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="average-container col-md-12">
           <div class="gray-coloring">
-            <div class="employee-percentage">
-              <div class="employee-percentage-value col-md-5">
-                {{Area.stayedEmployeesCount}}
-              </div>
-              <div class="employee-percentage-text col-md-7">
-                Of employees stayed here
-              </div>
+            <div class="col-md-3">
+                <p class="desc-small-text text center ">Average of what you colleagues from Stark pay</p>
             </div>
-            <ul class="commute text-center col-md-12">
-                <li><img height="24px" src="/assets/images/New infographics-17(grey).png" alt=""> <p>{{Area.TimeFor.bike}} mins by bike</p></li>
-                <li><img height="24px" src="/assets/images/New infographics-16(grey).png" alt=""> <p>{{Area.TimeFor.tube}} mins by tube</p></li>
-                <li><img height="24px" src="/assets/images/New infographics-20(grey).png" alt=""> <p>{{Area.TimeFor.walk}} mins by walk</p></li>
-            </ul>
+            <div class="col-md-9">
+                <div class="col-md-6 text-center">
+                    <p class="desc-medium-text">£{{this.model.SI_room_rent}}</p>
+                    <p class="desc-small-text text center">a room in flatshare</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <p class="desc-medium-text">£{{this.model.SI_1_bed_rent}}</p>
+                    <p class="desc-small-text text-center">1 bedroom flat</p>
+                </div>  
+                <div class="pt10 col-md-12 text-center"><i>(prices above include bills)</i></div>
+            </div>
           </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="testimonial-container col-md-12">
-        <div class="gray-coloring">
-          <img width="80px" height="80px" src="/assets/images/New infographics-30(grey).png" alt="Testimonial">
-          <p class="text-left testimonial-text">{{Area.whatColleguesSay.Text}}</p>
-          <div class="pt10 col-md-12 text-center"><i><b>{{Area.whatColleguesSay.Author}},</b>{{Area.whatColleguesSay.RelocatedTime}} </i></div>
-        </div>        
+    <div class="row">
+      <div class="chart-info col-md-12">
+        <div class="chart-container col-md-9">
+          <div class="gray-coloring col-md-12">
+            <div class="col-md-6 separator">
+              <div class="text-center">Types of accommodation</div>
+              <div class="chart">
+                  <canvas height="150px" id="chart1"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-center">Ways of commuting</div>
+                <div class="chart">
+                    <canvas height="150px"  id="chart2"></canvas>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="chart-container col-md-3">
+            <div class="gray-coloring">
+              <div class="employee-percentage">
+                <div class="employee-percentage-value col-md-5">
+                  {{this.model.How_many_employees_stayed_there}}
+                </div> 
+                <div class="employee-percentage-text col-md-7">
+                  Of employees stayed here
+                </div>
+              </div>
+              <ul class="commute text-center col-md-12">
+                  <li><img height="24px" src="/assets/images/New infographics-17(grey).png" alt=""> <p>{{this.model.Bike_time}} by bike</p></li>
+                  <li><img height="24px" src="/assets/images/New infographics-16(grey).png" alt=""> <p>{{this.model.Tube_time}} by tube</p></li>
+                  <li><img height="24px" src="/assets/images/New infographics-20(grey).png" alt=""> <p>{{this.model.Walk_time}} by walk</p></li>
+              </ul>
+            </div>
+        </div>
+      </div>
     </div>
+    <div class="row">
+      <div class="testimonial-container col-md-12">
+          <div class="gray-coloring">
+            <img width="80px" height="80px" src="/assets/images/New infographics-30(grey).png" alt="Testimonial">
+            <p class="text-left testimonial-text">{{text}}</p>
+            <div class="pt10 col-md-12 text-center"><i><b>{{author}},</b>{{relocatedTime}} </i></div>
+          </div>        
+      </div>
+    </div>
+    <script>
+      
+    </script>
   </div>
-  <script>
-    
-  </script>
-</div>

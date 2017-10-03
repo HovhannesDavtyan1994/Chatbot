@@ -92,7 +92,7 @@ export class MyNewComponentComponent implements OnInit {
   }
  
   handleAPIAIresponse(response){
-    console.log("handle",response);
+    console.log(response);
     let infographic = response.result.fulfillment.data.Infographics;
     if(infographic.hasOwnProperty("number")){
       console.log("infographic.number",infographic.number);

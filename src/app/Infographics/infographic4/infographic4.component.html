@@ -1,15 +1,17 @@
 <div class="infographic">
   <div class="row">
     <div class="header-text col-md-12 text-center">
-        <p>Your personal monthly budget for {{Employee.MovingCity}}</p>
+        <p>Your personal monthly budget for {{this.model.destination_city}}</p>
     </div>
   </div>
   <div class="row grey-coloring">
     <div class="wrapper">
       <div class="container info">
-        <p class="list-header text-center">{{Employee.Name}} monthly London Budget</p>
+        <p class="list-header text-center">{{this.model.name}} monthly {{this.model.destination_city}} Budget</p>
         <ul class="monthly-budget">
-            <li><span><img src="/assets/images/New infographics-19.png" alt=""></span> <p>Rent</p></li>
+            <li><span><img src="/assets/images/New infographics-19.png" alt=""></span> <p>Rent</p> 
+              <b class="pull-right cost">£{{this.model.rent}}</b>
+            </li>
             <li><span><img src="/assets/images/New infographics-18.png" alt=""></span> <p>Commute</p></li>
             <li class="last-li"><span><img src="/assets/images/New infographics-28.png" alt=""></span><p>Groceries</p></li>
         </ul>
