@@ -1,7 +1,7 @@
 
 <div class="infographic row">
     <div class="header-text col-md-12 text-center">
-        <p>Basic expenses comparison {{this.model}}</p>
+        <p>Basic expenses comparison {{this.model.country_data.Capital_cities}}</p>
     </div>
     <div class="row">
         <div class="col-md-12">
@@ -11,7 +11,7 @@
                         <img width="100px" height="100px" src="{{originCity.cityIconUrl}}" alt="{{movingCity.name}}">
                     </div>
                     <div class="col-md-9">
-                        <p class="city-name col-md-12">{{originCity.name}}</p>
+                        <p class="city-name col-md-12"></p>
                         <p class="overall-costs col-md-12">{{originCity.currency + originCity.price}} <span> (€{{originCity.priceInEur}}) {{originCity.period}}</span></p>
                     </div>                  
                 </div>
