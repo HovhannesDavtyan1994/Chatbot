@@ -1,20 +1,20 @@
 <div class="infographic">
     <div class="row">
       <div class="header-text col-md-12 text-center">
-          <p>Stark employees' living in {{Employee.AreaName}}</p>
+          <p>Stark employees' living in {{this.model.Name_of_area}}</p>
       </div>
     </div>
     <div class="row">
       <ul class="col-md-12 list">
         <li class="col-md-4 text-center">
             <img src="/assets/images/New infographics-16.png" alt="">
-            <p class="percentage">{{Employee.TransportToOffice.Bike.ColleaguesPercent}}%</p>
+            <p class="percentage">{{this.model.who_tube}}</p>
             <p class="text-small">of Stark employees</p>
             <p class="text-big">take the tube to Stark</p>
             <div class="tube-info">
-              <p class="cost">£{{Employee.TransportToOffice.Bike.Price}}</p>
+              <p class="cost">£{{this.model.Cost_of_tube}}</p>
               <p class="period">per/month</p>
-              <p class="commute-time">{{Employee.TransportToOffice.Bike.Time}} mins</p>
+              <p class="commute-time">{{this.model.Tube_time}}</p>
               <p class="commute-text">commute time</p>
             </div>
             <span class="cons">
@@ -28,13 +28,13 @@
         </li>
         <li class="col-md-4 text-center">
             <img src="/assets/images/New infographics-17.png" alt="">
-            <p class="percentage">{{Employee.TransportToOffice.Cycle.ColleaguesPercent}}%</p>
+            <p class="percentage">{{this.model.who_bike}}</p>
             <p class="text-small">of Stark employees</p>
             <p class="text-big">cycle to Stark</p>
             <div class="tube-info">
-              <p class="cost">£{{Employee.TransportToOffice.Cycle.Price}}</p>
+              <p class="cost">£{{this.model.Cost_of_bike}}*</p>
               <p class="period">per/month</p>
-              <p class="commute-time">{{Employee.TransportToOffice.Cycle.Time}} mins</p>
+              <p class="commute-time">{{this.model.Bike_time}}</p>
               <p class="commute-text">commute time</p>
             </div>
             <span class="cons">
@@ -48,13 +48,13 @@
         </li>
         <li class="col-md-4 text-center">
             <img src="/assets/images/New infographics-20.png" alt="">
-            <p class="percentage">{{Employee.TransportToOffice.Walk.ColleaguesPercent}}%</p>
+            <p class="percentage">{{this.model.who_walk}}</p>
             <p class="text-small">of Stark employees</p>
             <p class="text-big">walk to Stark</p>
             <div class="tube-info">
-              <p class="cost">£{{Employee.TransportToOffice.Walk.Price}}</p>
+              <p class="cost">£{{this.model.Cost_of_walk}}</p>
               <p class="period">per/month</p>
-              <p class="commute-time">{{Employee.TransportToOffice.Walk.Time}} mins</p>
+              <p class="commute-time">{{this.model.Walk_time}}</p>
               <p class="commute-text">commute time</p>
             </div>
             <span class="cons">

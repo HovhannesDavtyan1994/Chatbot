@@ -1,29 +1,29 @@
 
 <div class="infographic row">
     <div class="header-text col-md-12 text-center">
-        <p>Basic expenses comparison {{this.model.country_data.Capital_cities}}</p>
+        <p>Basic expenses comparison</p>
     </div>
     <div class="row">
         <div class="col-md-12">
             <div class="country-container separator col-md-6">
                 <div class="pull-right col-md-10">
                     <div class="city-icon-container col-md-3">
-                        <img width="100px" height="100px" src="{{originCity.cityIconUrl}}" alt="{{movingCity.name}}">
+                        <img width="100px" height="100px" src="/assets/images/New infographics-36.png" alt="{{this.model.country_data.Capital_cities}}">
                     </div>
                     <div class="col-md-9">
-                        <p class="city-name col-md-12"></p>
-                        <p class="overall-costs col-md-12">{{originCity.currency + originCity.price}} <span> (€{{originCity.priceInEur}}) {{originCity.period}}</span></p>
+                        <p class="city-name col-md-12">{{this.model.country_data.Capital_cities}}</p>
+                        <p class="overall-costs col-md-12">{{this.model.country_data.Overall_cost}} <span>(€960) a month</span></p>
                     </div>                  
                 </div>
             </div>
             <div class="country-container col-md-6">
                 <div class="pull-left col-md-10">
                     <div class="city-icon-container col-md-3">
-                        <img width="100px" height="100px" src="{{movingCity.cityIconUrl}}" alt="{{movingCity.name}}">
+                        <img width="100px" height="100px" src="/assets/images/New infographics-37.png" alt="London">
                     </div>
                     <div class="col-md-9">
-                        <p class="city-name col-md-12">{{movingCity.name}}</p>
-                        <p class="overall-costs col-md-12">{{movingCity.currency + movingCity.price}} <span> (€{{movingCity.priceInEur}}) {{movingCity.period}}</span></p>
+                        <p class="city-name col-md-12">London</p>
+                        <p class="overall-costs col-md-12">£1300 <span>(€1600) a month</span></p>
                     </div>
                 </div>
             </div>
@@ -37,37 +37,37 @@
         <ul class="container">
             <li class="data-comparison row">
                 <div class="data-comparison-text col-md-9">                    
-                    Accommodation prices in {{originCity.name}}<br/>are <span>{{priceDifference.accommodation.asText}}</span> than in {{movingCity.name}}
+                    Accommodation prices in {{this.model.country_data.Capital_cities}}<br/>are <span>{{this.model.country_data.Accommodation_in_compare}}</span> than in London
                 </div>
                 <div class="data-comparison-percentage col-md-3 pull-right">
-                        <span>{{priceDifference.accommodation.percentage}}%</span>
+                        <span>{{this.model.country_data.Accomodation}}</span>
                     <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
                 </div>
             </li>
             <li class="data-comparison row">
                 <div class="data-comparison-text col-md-9">                    
-                    Transport prices in {{originCity.name}}<br/>are <span>{{priceDifference.transport.asText}}</span> than in {{movingCity.name}}
+                    Transport prices in {{this.model.country_data.Capital_cities}}<br/>are <span>{{this.model.country_data.transport_in_compare}}</span> than in London
                 </div>
                 <div class="data-comparison-percentage col-md-3 pull-right">
-                    <span>{{priceDifference.transport.percentage}}%</span>
+                    <span>{{this.model.country_data.Transport}}</span>
                     <span>  <i class="fa fa-caret-down" aria-hidden="true"></i></span>
                 </div>
             </li>
             <li class="data-comparison row">
                 <div class="data-comparison-text col-md-9">                    
-                    Food prices in {{originCity.name}}<br/>are <span>{{priceDifference.food.asText}}</span> than in {{movingCity.name}}
+                    Food prices in {{this.model.country_data.Capital_cities}}<br/>are <span>{{this.model.country_data.Food_in_compare}}</span> than in London
                 </div>
                 <div class="data-comparison-percentage col-md-3 pull-right">
-                    <span>{{priceDifference.food.percentage}}%</span>
+                    <span>{{this.model.country_data.Food}}</span>
                     <span>  <i class="fa fa-caret-down" aria-hidden="true"></i></span>
                 </div>
             </li>
             <li class="data-comparison last-data-comparison row">
                 <div class="data-comparison-text col-md-9">                    
-                    Entertainment prices in {{originCity.name}}<br/>are <span>{{priceDifference.entertainment.asText}}</span> than in {{movingCity.name}}
+                    Entertainment prices in {{this.model.country_data.Capital_cities}}<br/>are <span>{{this.model.country_data.Entertainment_in_compare}}</span> than in London
                 </div>
                 <div class="data-comparison-percentage col-md-3 pull-right">
-                    <span>{{priceDifference.entertainment.percentage}}%</span>
+                    <span>{{this.model.country_data.Entertainment}}</span>
                     <span>  <i class="fa fa-caret-down" aria-hidden="true"></i></span>
                 </div>
             </li>
