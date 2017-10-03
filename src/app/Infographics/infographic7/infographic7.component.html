@@ -7,7 +7,7 @@
     <div class="row grey-coloring">
       <div class="wrapper">
         <div class="container info">
-          <p class="list-header text-center">John`s monthly London Budget</p>
+          <p class="list-header text-center">{{this.model.user_name}}`s monthly London Budget</p>
           <ul class="monthly-budget">
               <li>
                 <span><img src="/assets/images/New infographics-19.png" alt=""></span>
@@ -25,7 +25,7 @@
                 <span><img src="/assets/images/New infographics-28.png" alt=""></span>
                 <p>Groceries</p>
                 <b class="pull-right cost" *ngIf="(!!this.model.groceries_cost )">£{{this.model.groceries_cost || 0}}<span>(€{{this.Math.round((this.model.groceries_cost || 0 ) * 1.13 )}})</span></b>
-                <p class="description">based on John`s cooking everyday</p>
+                <p class="description">based on {{this.model.user_name}}`s cooking everyday</p>
               </li>
           </ul>
           <div class="total">
