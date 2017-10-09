@@ -162,16 +162,16 @@
     }
 
     .list li img{
-        height:60px;
+        height: 50px;
     }
 
     .list li{
         border-right: 1px solid rgba(79, 90, 101, 1);
-        margin-top: 30px; 
+        margin-top: 10px; 
     }
 
     .percentage{
-        font-size: 52px;
+        font-size: 42px;
         color: rgba(22, 134, 255, 1);
         font-weight: bold;
     }
@@ -196,27 +196,27 @@
     }
 
     .cost{
-        font-size: 52px;
+        font-size: 42px;
         font-weight: bold;
-        line-height: 50px;
-        padding-top: 15px;
+        line-height: 40px;
+        padding-top: 10px;
     }
     .period{
-        font-size: 16px;
-        line-height: 15px;
-        padding-bottom: 15px
+        font-size: 14px;
+        line-height: 14px;
+        padding-bottom: 10px;
     }
 
     .commute-time{
-        font-size: 28px;
+        font-size: 25px;
         font-weight: bold;
-        line-height: 24px;
+        line-height: 20px;
     }
     .commute-text{
-        font-size: 16px;
-        line-height: 15px;
-        padding-top: 5px;
-        padding-bottom: 15px;
+        font-size: 14px;
+        line-height: 14px;
+        padding-top: 2px;
+        padding-bottom: 10px;
     }
 
     .cons, .pros{
@@ -252,7 +252,9 @@
 
     .clearification{
         font-weight: bold;
-        text-align: left;
+        text-align: left;        
+        font-size: 12px;
+        text-align: center;
     }
 
     .clear-container{
