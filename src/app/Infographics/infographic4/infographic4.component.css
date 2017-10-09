@@ -42,7 +42,9 @@ p{
     background-size: cover; */
     position: relative;
 }
-
+.wrapper img{
+    height: 860px;
+}
 .wrapper .info {
     position: absolute;
     top: 25%;
