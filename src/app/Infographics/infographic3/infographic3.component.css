@@ -1,132 +1,283 @@
-.infographic{
-    font-family: proxima-nova;
-    color:rgba(79, 90, 101, 1);
-    padding: 0;
-}
-
-.infographic, .header-text, ul{
-    padding: 0;
-}
-ul{
-    list-style: none;
-}
-p{
-    margin: 0;
-}
-.header-text{
-    background-color:  rgba(22, 134, 255, 1);
-    color: white;
-    font-size: 24px;
-    line-height: 24px;
-}
-
-.testimonial-container img{
-    margin: auto;
-    display: block;
-}
-.testimonial-text{
-    font-size: 15px;
-    padding: 10px;
+@media only screen and (min-width : 1441px) {
+    .infographic{
+        font-family: proxima-nova;
+        color:rgba(79, 90, 101, 1);
+        padding: 0;
+    }
     
+    .infographic, .header-text, ul{
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    p{
+        margin: 0;
+    }
+    .header-text{
+        background-color:  rgba(22, 134, 255, 1);
+        color: white;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    
+    .testimonial-container img{
+        margin: auto;
+        display: block;
+    }
+    .testimonial-text{
+        font-size: 15px;
+        padding: 10px;
+        
+    }
+    
+    .header-text p{
+        line-height: 60px;
+        font-weight: 500;
+        margin: 0;
+    }
+    
+    .desc-small-text{
+        font-size: 22px;
+        font-weight: bold;
+        padding: 15px 0;
+    }
+    .line-height{
+        line-height: 70px;
+    }
+    
+    .desc-big-text{ 
+        color: rgba(22, 134, 255, 1);
+        font-size: 60px;
+        font-weight: bold;
+        line-height: 71px;
+        padding: 15px 0;
+    
+    }
+    
+    .desc-medium-text{
+        color: rgba(22, 134, 255, 1);
+        font-size: 54px;
+        font-weight: bold;
+        line-height: 60px;
+    }
+    
+    .pt10{
+        padding-top: 10px;
+    }
+    
+    .ml15{
+        margin-left: 15px;
+    }
+    .commute{
+        height: 100%;
+        margin: 0;
+    }
+    .commute li {
+        margin:20px 0;
+        height: 24px;
+    }
+    
+    
+    .commute li p{
+        line-height: 23px;
+        padding-left: 10px;
+        display: inline-block
+    }
+    
+    
+    .separator{
+        height: 100%;
+        position: relative
+    }
+    
+    .separator{
+        border-right: 1px solid rgba(142,142, 141, 1);
+    }
+    
+    .employee-percentage{
+        border: 1px solid rgba(22, 134, 255, 1);
+        border-radius: 12px;
+        display: inline-block;
+    }
+    
+    .employee-percentage-value{
+        font-size: 32px;
+        color: rgba(22, 134, 255, 1);
+    }
+    
+    .employee-percentage-text{
+        font-size: 13px;
+        padding: 5px;
+    }
+    .chart-container{
+        height: 235px;
+        margin-bottom: 10px;
+    }
+    
+    .chart-info{
+        padding: 0;
+        display: inline-block;
+    }
+    .gray-coloring{
+        background-color: rgba(242, 242, 242, 1);
+        display: inline-block;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .testimonial-container, .chart-info, .average-container{
+        width: 99%;
+        margin-bottom: 10px;
+    }
 }
+    @media only screen and (max-width : 1441px) {
+    *{
+        padding: 0;
+    }
 
-.header-text p{
-    line-height: 60px;
-    font-weight: 500;
-    margin: 0;
-}
+    .infographic{
+        font-family: proxima-nova;
+        color:rgba(79, 90, 101, 1);
+        padding: 0;
+    }
 
-.desc-small-text{
-    font-size: 22px;
-    font-weight: bold;
-    padding: 15px 0;
-}
-.line-height{
-    line-height: 70px;
-}
+    .infographic, .header-text, ul{
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    p{
+        margin: 0;
+    }
+    .header-text{
+        background-color:  rgba(22, 134, 255, 1);
+        color: white;
+        font-size: 24px;
+        line-height: 24px;
+    }
 
-.desc-big-text{ 
-    color: rgba(22, 134, 255, 1);
-    font-size: 60px;
-    font-weight: bold;
-    line-height: 71px;
-    padding: 15px 0;
+    .testimonial-container img{
+        margin: auto;
+        display: block;
+    }
+    .testimonial-text{
+        font-size: 14px;
+        padding: 0 10px;
+    }
 
-}
+    .pt20{
+        padding-top: 20px;
+    }
 
-.desc-medium-text{
-    color: rgba(22, 134, 255, 1);
-    font-size: 54px;
-    font-weight: bold;
-    line-height: 60px;
-}
+    .pt30{
+        padding-top: 30px;
+    }
 
-.pt10{
-    padding-top: 10px;
-}
+    .header-text p{
+        line-height: 60px;
+        font-weight: 500;
+        margin: 0;
+    }
 
-.ml15{
-    margin-left: 15px;
-}
-.commute{
-    height: 100%;
-    margin: 0;
-}
-.commute li {
-    margin:20px 0;
-    height: 24px;
-}
+    .desc-small-text{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .line-height{
+        line-height: 70px;
+    }
 
+    .desc-big-text{ 
+        color: rgba(22, 134, 255, 1);
+        font-size: 36PX;
+        font-weight: bold;
+        line-height: 70px;
+        padding: 15px 0;
 
-.commute li p{
-    line-height: 23px;
-    padding-left: 10px;
-    display: inline-block
-}
+    }
 
+    .desc-medium-text{
+        color: rgba(22, 134, 255, 1);
+        font-size: 54px;
+        font-weight: bold;
+        line-height: 60px;
+    }
 
-.separator{
-    height: 100%;
-    position: relative
-}
+    .pt10{
+        padding-top: 10px;
+    }
 
-.separator{
-    border-right: 1px solid rgba(142,142, 141, 1);
-}
+    .ml15{
+        margin-left: 15px;
+    }
+    .commute{
+        height: 100%;
+        margin: 0;
+    }
+    .commute li {
+        margin: 10px 0;
+        height: 25px;
+    }
 
-.employee-percentage{
-    border: 1px solid rgba(22, 134, 255, 1);
-    border-radius: 12px;
-    display: inline-block;
-}
+    .commute li p{
+        line-height: 23px;
+        padding-left: 10px;
+        display: inline-block
+    }
 
-.employee-percentage-value{
-    font-size: 32px;
-    color: rgba(22, 134, 255, 1);
-}
+    .separator{
+        height: 100%;
+        position: relative
+    }
 
-.employee-percentage-text{
-    font-size: 13px;
-    padding: 5px;
-}
-.chart-container{
-    height: 235px;
-    margin-bottom: 10px;
-}
+    .separator{
+        border-right: 1px solid rgba(142,142, 141, 1);
+    }
 
-.chart-info{
-    padding: 0;
-    display: inline-block;
-}
-.gray-coloring{
-    background-color: rgba(242, 242, 242, 1);
-    display: inline-block;
-    padding: 10px;
-    height: 100%;
-    width: 100%;
-}
+    .employee-percentage{
+        border: 1px solid rgba(22, 134, 255, 1);
+        border-radius: 12px;
+        display: inline-block;
+    }
 
-.testimonial-container, .chart-info, .average-container{
-    width: 99%;
-    margin-bottom: 10px;
+    .employee-percentage-value{
+        font-size: 32px;
+        padding-left: 10px;
+        color: rgba(22, 134, 255, 1);
+    }
+
+    .employee-percentage-text{
+        font-size: 13px;
+        padding: 5px;
+    }
+    .chart-container{
+        height: 180px;
+        margin-bottom: 10px;
+        padding-right: 10px;
+    }
+
+    .chart-info{
+        padding: 0;
+        display: inline-block;
+    }
+    .gray-coloring{
+        background-color: rgba(242, 242, 242, 1);
+        display: inline-block;
+        padding: 10px;
+        height: 100%;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .testimonial-container, .chart-info, .average-container{
+        width: 99%;
+        margin-bottom: 10px;
+    }
+
+    .chart-container:first{
+        padding-right: 10px;
+    }
 }

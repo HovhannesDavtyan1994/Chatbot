@@ -1,27 +1,27 @@
 
-<div class="infographic row">
+<div class="infographic col-md-12">
     <div class="header-text col-md-12 text-center">
         <p>Basic expenses comparison</p>
     </div>
-    <div class="row">
-        <div class="col-md-12">
+    <div class="">
+        <div class="col-md-10 col-md-offset-1">
             <div class="country-container separator col-md-6">
-                <div class="pull-right col-md-10">
-                    <div class="city-icon-container col-md-3">
+                <div class="pull-right col-md-12">
+                    <div class="col-md-4 city-icon-container">
                         <img width="100px" height="100px" src="/assets/images/New infographics-36.png" alt="{{this.model.country_data.Capital_cities}}">
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <p class="city-name col-md-12">{{this.model.country_data.Capital_cities}}</p>
-                        <p class="overall-costs col-md-12">{{this.model.country_data.Overall_cost}} <span>(€{{this.Math.round(this.model.country_data.Overall_cost * 1.13)}}) a month</span></p>
+                        <p class="overall-costs col-md-12">£{{this.model.country_data.Overall_cost}} <span>(€{{this.Math.round(this.model.country_data.Overall_cost * 1.13)}}) a month</span></p>
                     </div>                  
                 </div>
             </div>
             <div class="country-container col-md-6">
-                <div class="pull-left col-md-10">
-                    <div class="city-icon-container col-md-3">
+                <div class="pull-left col-md-12">
+                    <div class="col-md-4 city-icon-container">
                         <img width="100px" height="100px" src="/assets/images/New infographics-37.png" alt="London">
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <p class="city-name col-md-12">London</p>
                         <p class="overall-costs col-md-12">£1300 <span>(€{{this.Math.round(1300 * 1.13)}}) a month</span></p>
                     </div>
@@ -34,7 +34,7 @@
         </div>
     </div>
     <div class="comparison-container col-md-12">
-        <ul class="container">
+        <ul class=" col-md-8 col-md-offset-2">
             <li class="data-comparison row">
                 <div class="data-comparison-text col-md-9">                    
                     Accommodation prices in {{this.model.country_data.Capital_cities}}<br/>are <span>{{this.model.country_data.Accommodation_in_compare}}</span> than in London

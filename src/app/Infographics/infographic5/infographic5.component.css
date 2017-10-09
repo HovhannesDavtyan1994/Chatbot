@@ -1,129 +1,261 @@
-.infographic{
-    font-family: proxima-nova;
-    color:rgba(79, 90, 101, 1);
-    padding: 0;
+
+@media only screen and (min-width : 1441px) {
+    .infographic{
+        font-family: proxima-nova;
+        color:rgba(79, 90, 101, 1);
+        padding: 0;
+    }
+    
+    .infographic, .header-text, ul{
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    p{
+        margin: 0;
+    }
+    .header-text{
+        background-color:  rgba(22, 134, 255, 1);
+        color: white;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    
+    
+    .header-text p{
+        line-height: 60px;
+        font-weight: 500;
+        margin: 0;
+    }
+    
+    .list li img{
+        height:100px;
+    }
+    
+    .list li{
+        border-right: 1px solid rgba(79, 90, 101, 1);
+        margin-top: 30px; 
+    }
+    
+    .percentage{
+        font-size: 72px;
+        color: rgba(22, 134, 255, 1);
+        font-weight: bold;
+    }
+    
+    .text-small{
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .text-big{
+        color: black;
+        font-size: 28px;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+    
+    .tube-info{
+        background-color: rgba(22, 134, 255, 1);
+        color: white;
+        border-radius: 15px;
+    }
+    
+    .cost{
+        font-size: 72px;
+        font-weight: bold;
+        line-height: 60px;
+        padding-top: 20px;
+    }
+    .period{
+        font-size:20px;
+        line-height: 15px;
+        padding-bottom: 20px;
+    }
+    
+    .commute-time{
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 24px
+    }
+    .commute-text{
+        font-size:20px;
+        line-height: 15px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .cons, .pros{
+        width: 100%;
+        display: inline-block;
+        text-align: left;
+    }
+    
+    .cons i{
+        font-size: 36px;
+        color: rgba(50, 186, 124, 1);
+        margin-right: 15px;
+        margin-top: 13px;
+        float: left;
+        height: 64px;
+    }
+    
+    .pros i{
+        font-size: 36px;
+        color: rgba(232, 71, 26, 1);
+        margin-right: 15px;
+        margin-top: 13px;
+        float: left;
+        height: 64px;
+    }
+    
+    .cons, .pros{
+        font-size: 24px;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    
+    .cons p, .pros p{
+        display: inline;
+    }
+    
+    .clearification{
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .clear-container{
+        margin-left: 20px;
+    }
 }
 
-.infographic, .header-text, ul{
-    padding: 0;
-}
-ul{
-    list-style: none;
-}
-p{
-    margin: 0;
-}
-.header-text{
-    background-color:  rgba(22, 134, 255, 1);
-    color: white;
-    font-size: 24px;
-    line-height: 24px;
-}
+@media only screen and (max-width : 1440px) {
+    .infographic{
+        font-family: proxima-nova;
+        color:rgba(79, 90, 101, 1);
+        padding: 0;
+    }
+
+    .infographic, .header-text, ul{
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    p{
+        margin: 0;
+    }
+    .header-text{
+        background-color:  rgba(22, 134, 255, 1);
+        color: white;
+        font-size: 24px;
+        line-height: 24px;
+    }
 
 
-.header-text p{
-    line-height: 60px;
-    font-weight: 500;
-    margin: 0;
-}
+    .header-text p{
+        line-height: 60px;
+        font-weight: 500;
+        margin: 0;
+    }
 
-.list li img{
-    height:100px;
-}
+    .list li img{
+        height:60px;
+    }
 
-.list li{
-    border-right: 1px solid rgba(79, 90, 101, 1);
-    margin-top: 30px; 
-}
+    .list li{
+        border-right: 1px solid rgba(79, 90, 101, 1);
+        margin-top: 30px; 
+    }
 
-.percentage{
-    font-size: 72px;
-    color: rgba(22, 134, 255, 1);
-    font-weight: bold;
-}
+    .percentage{
+        font-size: 52px;
+        color: rgba(22, 134, 255, 1);
+        font-weight: bold;
+    }
 
-.text-small{
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-}
+    .text-small{
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+    }
 
-.text-big{
-    color: black;
-    font-size: 28px;
-    font-weight: bold;
-    padding-bottom: 30px;
-}
+    .text-big{
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
 
-.tube-info{
-    background-color: rgba(22, 134, 255, 1);
-    color: white;
-    border-radius: 15px;
-}
+    .tube-info{
+        background-color: rgba(22, 134, 255, 1);
+        color: white;
+        border-radius: 15px;
+    }
 
-.cost{
-    font-size: 72px;
-    font-weight: bold;
-    line-height: 60px;
-    padding-top: 20px;
-}
-.period{
-    font-size:20px;
-    line-height: 15px;
-    padding-bottom: 20px;
-}
+    .cost{
+        font-size: 52px;
+        font-weight: bold;
+        line-height: 50px;
+        padding-top: 15px;
+    }
+    .period{
+        font-size: 16px;
+        line-height: 15px;
+        padding-bottom: 15px
+    }
 
-.commute-time{
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 24px
-}
-.commute-text{
-    font-size:20px;
-    line-height: 15px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
+    .commute-time{
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+    .commute-text{
+        font-size: 16px;
+        line-height: 15px;
+        padding-top: 5px;
+        padding-bottom: 15px;
+    }
 
-.cons, .pros{
-    width: 100%;
-    display: inline-block;
-    text-align: left;
-}
+    .cons, .pros{
+        width: 100%;
+        display: inline-block;
+        text-align: left;
+    }
 
-.cons i{
-    font-size: 36px;
-    color: rgba(50, 186, 124, 1);
-    margin-right: 15px;
-    margin-top: 13px;
-    float: left;
-    height: 64px;
-}
+    .cons i{
+        font-size: 28px;
+        color: rgba(50, 186, 124, 1);
+        margin-right: 15px;
+        margin-top: 6px;
+        float: left;
+    }
 
-.pros i{
-    font-size: 36px;
-    color: rgba(232, 71, 26, 1);
-    margin-right: 15px;
-    margin-top: 13px;
-    float: left;
-    height: 64px;
-}
+    .pros i{
+        font-size: 28px;
+        color: rgba(232, 71, 26, 1);
+        margin-right: 15px;
+        margin-top: 6px;
+        float: left;
+    }
 
-.cons, .pros{
-    font-size: 24px;
-    margin-top: 10px;
-    padding-top: 10px;
-}
+    .cons, .pros{
+        font-size: 16px;
+        padding-top: 10px;
+    }
 
-.cons p, .pros p{
-    display: inline;
-}
+    .cons p, .pros p{
+        display: inline;
+    }
 
-.clearification{
-    font-weight: bold;
-    text-align: left;
-}
+    .clearification{
+        font-weight: bold;
+        text-align: left;
+    }
 
-.clear-container{
-    margin-left: 20px;
+    .clear-container{
+        margin-left: 20px;
+    }
 }
