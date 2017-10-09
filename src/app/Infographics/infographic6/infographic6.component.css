@@ -1,3 +1,5 @@
+
+@media only screen and (min-width : 1441px) {
 .infographic{
     font-family: proxima-nova;
     color:rgba(79, 90, 101, 1);
@@ -92,3 +94,110 @@ p{
     font-size: 18px;
     font-weight: 600;
 }
+}
+
+
+@media only screen and (max-width : 1440px) {
+    .infographic{
+        font-family: proxima-nova;
+        color:rgba(79, 90, 101, 1);
+        padding: 0;
+    }
+    
+    .infographic, .header-text, ul{
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    p{
+        margin: 0;
+    }
+    .header-text{
+        background-color:  rgba(22, 134, 255, 1);
+        color: white;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    
+    
+    .header-text p{
+        line-height: 60px;
+        font-weight: 500;
+        margin: 0;
+    }
+    
+    .grey-coloring{
+        background-color: rgba(242, 242, 242, 1);
+    }
+    
+    .wrapper{
+        font-size: 23px;        
+        display: inline-block;
+        width: 97%;
+        margin: 10px;
+    
+    }
+    
+    .wrapper > div{
+        padding: 0;
+    }
+    .names1, .names2, .names3 {
+        margin: 0;
+    }
+    .names1 li, .names2 li, .names3 li {
+        height: 60px;
+        text-align: center;
+        border: 2px solid white;
+    }
+    
+    .table-header{
+        background-color:  rgba(22, 134, 255, 1);
+        color:white;
+        line-height: 32px;
+    }
+    
+    
+    .table-header img{
+        width: 80px;
+        margin-top: -50px; 
+    }
+    
+    
+    .list-item{
+        line-height: 60px;
+    }
+    
+    .number{
+        font-size: 34px;
+    }
+    
+    .list-item-total{
+        background-color:rgba(192, 225, 249, 1);
+        font-weight: bold;
+    }
+    
+    .table-header p{
+        width: 130px;
+        display: inline-block;
+        padding-top: 5px;
+        line-height: 22px;
+    }
+    
+    .head-img-container{
+        display: inline-block;
+    }
+    .clearifications{
+        color: black;
+        font-size: 14px;
+        padding: 0 30px;
+        font-weight: 600;
+    }
+    .head-img-container{
+        background-image: url("/assets/images/New infographics-29.png");
+        background-size: 50px 50px;
+        background-repeat: no-repeat;
+        background-position: 0px 2px;
+        padding-left: 60px;
+    }
+    }
