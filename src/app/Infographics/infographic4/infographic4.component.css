@@ -126,7 +126,10 @@ p{
         width: 50px;
     }
     .wrapper img{
-        height: 563px
+        height: 563px;
+    }
+    .wrapper .info{
+        left: 32%;
     }
     .total{
         font-size: 16px;

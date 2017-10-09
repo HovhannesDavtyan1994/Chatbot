@@ -9,7 +9,6 @@
         margin: 0;
     }
     .comparison-container{
-        background-image: url("/assets/images/New infographics-33.png");
         background-repeat: no-repeat;
         background-size: cover;
         height: 580px;
@@ -86,7 +85,10 @@
         margin-left: -10px;
         overflow: hidden;
     }
-    
+    .comparison-container img{
+        height: 575px;;
+        position: absolute;
+    }
     .text-container{
         font-family: proxima-nova;
         font-size: 18px;
@@ -115,7 +117,6 @@
         margin: 0;
     }
     .comparison-container{
-        background-image: url("/assets/images/New infographics-33.png");
         background-repeat: no-repeat;
         background-size: contain;
         height: 580px;
@@ -137,6 +138,10 @@
 
     }
 
+    .comparison-container img{
+        height: 375px;
+        position: absolute;
+    }
     .data-comparison span{
         color: rgba(237, 28, 36, 1)
     }
