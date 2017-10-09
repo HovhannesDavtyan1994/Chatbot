@@ -178,7 +178,7 @@
     }
     .overall-costs{
         color:  rgba(22, 134, 255, 1);
-        font-size: 26px;
+        font-size: 18px;
     }
     .overall-costs, .city-name{
         display: inline;
