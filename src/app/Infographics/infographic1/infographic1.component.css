@@ -161,7 +161,7 @@
     }
 
     .country-container{
-        margin-top: 30px;
+        margin-top: 15px;
         margin-bottom: 20px;
         height: 70px;
     }
@@ -197,8 +197,7 @@
     .text-container{
         font-size: 17px;
         color: rgba(79, 90, 101, 1);
-        margin-top: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .last-data-comparison{
